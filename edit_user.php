@@ -7,9 +7,9 @@ verificarSesion();
 $id = isset($_GET['id']) ? $_GET['id'] : 0;
 
 if ($id > 0) {
-    $accion = "permiso_actualizar";
-}else {
     $accion = "permiso_editar";
+}else {
+    $accion = "permiso_actualizar";
 }
 
 // Verificar permisos antes de mostrar el contenido
